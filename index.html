@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Underwater Animation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <a href="" class="logo"><h1>BLUE LIFE</h1></a>
+
+        <nav>
+            <div class="nav-links" id="navLinks">
+              <i class="fa far fa-window-close" onclick="hideMenu()"></i>
+              <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">GALLERY</a></li>
+                <li><a href="">BLOG</a></li>
+                <li><a href="">CONTACT</a></li>
+              </ul>
+            </div>
+            <i class="fa fas fa-bars" onclick="showMenu()"></i>
+          </nav>
+
+    </header>
+
+    <!-- home section starts -->
+
+    <div class="container">
+        <div class="content">
+            <h1>Underwater</h1>
+            <h2>Adventure</h2>
+
+            <a href="#"><button>Join Now!</button></a>
+        </div>
+
+        <div class="video-container">
+            <video src="videos/vid1.mp4" autoplay muted loop class="vid1"></video>
+            <video src="videos/vid2.mp4" autoplay muted loop class="vid2"></video>
+            <video src="videos/vid3.mp4" autoplay muted loop class="vid3"></video>
+        </div>
+
+        <div class="controls">
+            <div class="dots dot1"></div>
+            <div class="dots dot2"></div>
+            <div class="dots dot3"></div>
+        </div>
+    </div>
+
+     <!-- simple js functions -->
+
+  <script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+      navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+      navLinks.style.right = "-200px";
+    }
+  </script>
+
+</body>
+</html>
