@@ -1,10 +1,3 @@
-:root {
-    --black: #2c3e50;
-    --blue: #45aaf2;
-    --text-shadow: .1rem .1rem .3rem #333;
-    --box-shadow: .1rem .1rem .3rem #333;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -38,12 +31,12 @@ header .logo {
     font-size: 1.6rem;
     color: #fff;
     text-decoration: none;
-    text-shadow: var(--text-shadow);
+    text-shadow: .1rem .1rem .3rem #333;
     margin-left: 4%;
 }
 
 header .logo:hover {
-    color: var(--blue);
+    color: #45aaf2;
 }
 
 nav {
@@ -80,7 +73,7 @@ nav img {
     content: "";
     width: 0%;
     height: 2px;
-    background-color: var(--blue);
+    background-color: #45aaf2;
     display: block;
     margin: auto;
     transition: 0.5s;
@@ -106,12 +99,12 @@ nav .fa {
 
 .container .content {
     text-align: center;
-    text-shadow: var(--text-shadow);
+    text-shadow: .1rem .1rem .3rem #333;
 }
 
 .container .content h1 {
     font-size: 9rem;
-    color: var(--blue);
+    color: #45aaf2;
     margin-top: 15%;
 }
 
@@ -124,16 +117,16 @@ nav .fa {
     outline: none;
     border: none;
     padding: 2% 5%;
-    background: var(--blue);
+    background: #45aaf2;
     cursor: pointer;
     font-size: 1.8rem;
     color: #fff;
-    box-shadow: var(--box-shadow);
+    box-shadow: .1rem .1rem .3rem #333;
     margin-top: 7%;
 }
 
 .container .content button:hover {
-    background: var(--black);
+    background: #2c3e50;
     letter-spacing: .2rem;
 }
 
@@ -166,19 +159,19 @@ nav .fa {
     display: flex;
 }
 
-.container .controls .dots {
+/* .container .controls .dots {
     height: 1.5rem;
     width: 4.5rem;
     background: #fff;
     margin: 0 1rem;
-    box-shadow: var(--box-shadow);
+    box-shadow: .1rem .1rem .3rem #333;
     border-radius: 5rem;
     cursor: pointer;
 }
 
 .container .controls .dots:hover {
-    background: var(--black);
-}
+    background: #2c3e50;
+} */
 
 @keyframes vid {
     0% {
