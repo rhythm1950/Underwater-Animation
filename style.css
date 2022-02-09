@@ -159,20 +159,6 @@ nav .fa {
     display: flex;
 }
 
-/* .container .controls .dots {
-    height: 1.5rem;
-    width: 4.5rem;
-    background: #fff;
-    margin: 0 1rem;
-    box-shadow: .1rem .1rem .3rem #333;
-    border-radius: 5rem;
-    cursor: pointer;
-}
-
-.container .controls .dots:hover {
-    background: #2c3e50;
-} */
-
 @keyframes vid {
     0% {
         transform: scale(3.5) skew(-45deg) rotate(45deg);
