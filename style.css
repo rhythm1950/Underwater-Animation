@@ -4,6 +4,7 @@
     --text-shadow: .1rem .1rem .3rem #333;
     --box-shadow: .1rem .1rem .3rem #333;
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -12,23 +13,27 @@
     font-family: 'exo 2', sans-serif;
     transition: all .2s linear;
 }
+
 html {
     font-size: 62.5%;
 }
+
 body {
     background: #333;
 }
+
 header {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 4rem 5rem;
+    padding: 2rem 5rem;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1;
 }
+
 header .logo {
     font-size: 1.6rem;
     color: #fff;
@@ -36,34 +41,41 @@ header .logo {
     text-shadow: var(--text-shadow);
     margin-left: 4%;
 }
+
 header .logo:hover {
     color: var(--blue);
 }
+
 nav {
     display: flex;
     padding: 2% 6%;
     justify-content: space-between;
     align-items: center;
-  }
+}
+
 nav img {
     width: 150px;
 }
+
 .nav-links {
     flex: 1;
     text-align: right;
 }
+
 .nav-links ul li {
     list-style: none;
     display: inline-block;
     padding: 8px 12px;
     position: relative;
 }
+
 .nav-links ul li a {
     color: white;
     text-decoration: none;
     font-size: 18px;
     font-weight: 400;
 }
+
 .nav-links ul li::after {
     content: "";
     width: 0%;
@@ -73,12 +85,15 @@ nav img {
     margin: auto;
     transition: 0.5s;
 }
+
 .nav-links ul li:hover::after {
     width: 100%;
 }
+
 nav .fa {
     display: none;
 }
+
 .container {
     height: 100vh;
     width: 100vw;
@@ -88,19 +103,23 @@ nav .fa {
     position: relative;
     overflow: hidden;
 }
+
 .container .content {
     text-align: center;
     text-shadow: var(--text-shadow);
 }
+
 .container .content h1 {
     font-size: 9rem;
     color: var(--blue);
     margin-top: 15%;
 }
+
 .container .content h2 {
     font-size: 7rem;
     color: #fff;
 }
+
 .container .content button {
     outline: none;
     border: none;
@@ -112,10 +131,12 @@ nav .fa {
     box-shadow: var(--box-shadow);
     margin-top: 7%;
 }
+
 .container .content button:hover {
     background: var(--black);
     letter-spacing: .2rem;
 }
+
 .container .video-container {
     position: absolute;
     top: 0;
@@ -124,6 +145,7 @@ nav .fa {
     width: 100%;
     z-index: -1;
 }
+
 .container .video-container video {
     height: 100%;
     width: 100%;
@@ -131,9 +153,11 @@ nav .fa {
     animation: vid .5s alternate;
     display: none;
 }
+
 .container .video-container .vid1 {
     display: block;
 }
+
 .container .controls {
     position: absolute;
     bottom: 15%;
@@ -141,6 +165,7 @@ nav .fa {
     transform: translateX(-50%);
     display: flex;
 }
+
 .container .controls .dots {
     height: 1.5rem;
     width: 4.5rem;
@@ -150,30 +175,38 @@ nav .fa {
     border-radius: 5rem;
     cursor: pointer;
 }
+
 .container .controls .dots:hover {
     background: var(--black);
 }
+
 @keyframes vid {
     0% {
         transform: scale(3.5) skew(-45deg) rotate(45deg);
     }
 }
-@media (max-width: 768px){
+
+@media (max-width: 768px) {
     .container {
         min-height: 600px;
     }
+
     .container .content h1 {
         font-size: 40px;
     }
+
     .container .content h2 {
         font-size: 38px;
     }
+
     .container .content button {
         padding: 4% 8%;
     }
+
     .nav-links ul li {
         display: block;
-      }
+    }
+
     .nav-links {
         position: fixed;
         background: rgb(19, 177, 80);
@@ -185,6 +218,7 @@ nav .fa {
         z-index: 2;
         transition: 1s;
     }
+
     nav .fa {
         display: block;
         color: #fff;
@@ -192,8 +226,9 @@ nav .fa {
         font-size: 22px;
         cursor: pointer;
     }
-      .nav-links ul {
+
+    .nav-links ul {
         padding: 30px;
     }
-    
+
 }
